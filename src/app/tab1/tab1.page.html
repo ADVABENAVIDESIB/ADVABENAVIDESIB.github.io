@@ -1,0 +1,129 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="main_content_div">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <div class="user_div">
+      <div class="firstDiv">
+        <ion-label class="welcome">HELLO!</ion-label>
+        <ion-label class="myname">I'M ADRIAN </ion-label>
+
+      </div>
+      <div class="avatar_back" [style.backgroundImage]="'url(assets/me.jpg)'"></div>
+    </div>
+
+    
+  </div>
+
+  <ion-accordion-group expand="inset">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="rose">
+        <ion-label><h1>ABOUT ME</h1></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        I am Adrian Valentin Benavides Ibarra, I am a programmer, I love 
+        programming and create things, usually I'm curious about how to do 
+        better apps, frontend and backend, I am a proactive person, I love the people and the teamwork.
+        
+
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="rose">
+        <ion-label><h1>EXPERIENCE</h1></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <h1>Secretaria de Seguridad Publica y Ciudadana (SSPC), August 16, 2022 - These days</h1>
+        <h6>In these days I'm working as a web developer in SSPC, we are building 
+          a web page for a government agency, I can't share data about the project
+          but, it is expected that with this web application they can manage the defendants from the state of Nayarit,
+          keeping a list of their biometric data for better recongnition.
+          Currently the project is about 80%. 
+           
+        </h6>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="rose">
+        <ion-label><h1>SKILLS</h1></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-icon name="logo-angular"></ion-icon>
+        Angular
+        <br><br>
+        <ion-icon name="logo-ionic"></ion-icon>
+        IONIC
+        <br><br>
+        <ion-icon name="code"></ion-icon>
+        PHP
+        <br><br>
+        <ion-icon name="logo-html5"></ion-icon>
+        HTML
+        <br><br>
+        <ion-icon name="logo-css3"></ion-icon>
+        CSS
+        <br><br>
+        <ion-icon name="cafe"></ion-icon>
+        Java
+        <br><br>
+        <ion-icon name="logo-javascript"></ion-icon>
+        JavaScript
+        <br><br>
+        <ion-icon name="logo-python"></ion-icon>
+        Python
+        <br><br>
+        <ion-icon name="logo-github"></ion-icon>
+        Git
+        <br><br>
+        <ion-icon name="server"></ion-icon>
+        SQL
+        <br><br>
+        <ion-icon name="logo-firebase"></ion-icon>
+        Firebase
+        <br><br>
+
+      </div>
+    </ion-accordion>
+  <ion-accordion value="fourth">
+      <ion-item slot="header" color="rose">
+        <ion-label><h1>LANGUAGE</h1></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-icon name="volume-high"></ion-icon>
+        ESPAÑOL: Native
+        <br><br>
+        <ion-icon name="volume-low"></ion-icon>
+        ENGLISH: Conversational
+        <br><br>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="fifth">
+      <ion-item slot="header" color="rose">
+        <ion-label><h1>CONTACT</h1></ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-icon name="home"></ion-icon> 
+        Plan de Ayala 154, 2 de agosto, Tepic Nayarit
+        <br><br>
+        <ion-icon name="call"></ion-icon> 
+        3313958653
+        <br><br>
+        <ion-icon name="mail"></ion-icon> 
+        advabenavidesib@ittepic.edu.mx
+        <br><br>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <a href="https://www.facebook.com/adrian.benavides.564"> FaceBook </a>
+        <br><br>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <a href="https://www.instagram.com/el_adrianbenavides/"> Instagram</a>
+        <br><br>
+        <ion-icon name="logo-github"></ion-icon>
+        <a href="https://github.com/ADVABENAVIDESIB"> Git hub</a>
+      
+        <br><br>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

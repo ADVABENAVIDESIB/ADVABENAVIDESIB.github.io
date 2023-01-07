@@ -1,0 +1,60 @@
+
+<!--ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ABOUT ME
+    </ion-title>
+  </ion-toolbar>
+</!--ion-header-->
+
+<ion-content [fullscreen]="true">
+  <!--ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button >ES</ion-button>
+        <ion-button >EN</ion-button>
+        <ion-button >FR</ion-button>
+      </ion-col>
+    </ion-row>
+  </!--ion-grid>
+  <ion-card-- color="light">
+    <ion-card-header>
+      <ion-card-title>ADRIAN VALENTIN BENAVIDES IBARRA</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>I AM A PROGRAMMER, WEB DEVELOPER, I LOVE PROGRAMING AND THE</ion-card-content>
+  </ion-card-->
+  <div class="main_content_div">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <div class="user_div">
+      <div class="firstDiv">
+        <ion-label class="welcome">TECNM</ion-label>
+        <ion-label class="myname">INSTITUTO TECNOLOGICO DE TEPIC</ion-label>
+
+      </div>
+      <div class="avatar_back" [style.backgroundImage]="'url(assets/tec.png)'"></div>
+    </div>
+
+    <div class="content_div animated bounceInUp">
+      <ion-label class="hello_lbl">LATEST SCHOOL ACTIVITIES WICH I HAVE PARTICIPATED</ion-label>
+
+      <ion-grid fixed>
+        
+        <ion-row>
+          <ion-col size="6"  *ngFor="let item of subjects"> 
+            <div class="col_div">
+              <figure class="image fade">
+                <img src="{{item.img}}" >
+                <ion-label class="ion-label">{{item.name}}</ion-label>
+                <figcaption ><ion-text style="size: 100px;">{{item.desc}}</ion-text></figcaption>
+              </figure>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+</ion-content>
